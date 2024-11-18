@@ -1,0 +1,176 @@
+/* Estilo base */
+.min-h-screen {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animación de círculos */
+  .animation-circle {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
+    border: 4px solid #df15b9;
+    border-radius: 50%;
+    animation: scale-circle 4s ease-in-out infinite;
+  }
+  .animation-circle2 {
+    position: absolute;
+    bottom: 58%;
+    right: 80%;
+    width: 61px;
+    height: 60px;
+    border: 4px solid #df15b9;
+    border-radius: 50%;
+    animation: scale-circle 4s ease-in-out infinite;
+  }
+  /* Animación de estrellas */
+  .animation-star {
+    position: absolute;
+    top: 80%;
+    right: 90%;
+    width: 50px;
+        height: 50px;
+    background: #deec0a;
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+    animation: move-star 6s linear infinite;
+  }
+    /* Animación de estrellas */
+    .animation-star2 {
+        position: absolute;
+        top: 35%;
+        right: 12%;
+        width: 50px;
+        height: 50px;
+        background: #deec0a;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+        animation: move-star 6s linear infinite;
+      }
+  /* Círculos decorativos */
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #df15b9; /* Rosa */
+    border-radius: 50%;
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    animation: move-circle 8s linear infinite;
+  }
+  
+  .circle.small {
+    width: 30px;
+    height: 30px;
+    background-color: #4caf50; /* Verde */
+    top: 15%;
+    left: 30%;
+    position: absolute;
+    animation: move-reverse 6s linear infinite;
+  }
+  .circle2 {
+    width: 50px;
+    height: 50px;
+    background-color: #df15b9; /* Rosa */
+    border-radius: 50%;
+    position: absolute;
+    top: 17%;
+    left: 83%;
+    animation: move-circle 8s linear infinite;
+  }
+  
+  .circle.small2 {
+    width: 30px;
+    height: 30px;
+    background-color: #4caf50; /* Verde */
+    top: 67%;
+    left: 14%;
+    position: absolute;
+    animation: move-reverse 6s linear infinite;
+  }
+  /* Animaciones */
+  
+  /* Movimiento de estrella */
+  @keyframes move-star {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px) rotate(45deg);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Escalado de círculos */
+  @keyframes scale-circle {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  
+  /* Movimiento de círculos */
+  @keyframes move-circle {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20px, -20px);
+    }
+    50% {
+      transform: translate(40px, 0);
+    }
+    75% {
+      transform: translate(20px, 20px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  /* Movimiento inverso de círculos */
+  @keyframes move-reverse {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-20px, 20px);
+    }
+    50% {
+      transform: translate(-40px, 0);
+    }
+    75% {
+      transform: translate(-20px, -20px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  

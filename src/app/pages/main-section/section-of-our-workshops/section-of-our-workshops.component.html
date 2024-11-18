@@ -1,0 +1,43 @@
+<div class="min-h-screen bg-gray-100 py-8 px-4">
+  <h1 class="text-center text-3xl md:text-4xl font-semibold mb-8">
+    Nuestros <span class="text-green-500">Talleres</span>
+  </h1>
+
+  <!-- Contenedor de tarjetas -->
+  <div class="container mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div
+      *ngFor="let taller of talleres"
+      class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105"
+    >
+      <!-- Imagen -->
+      <div class="h-40 w-full bg-gray-200">
+        <img
+          [src]="taller.imagen"
+          [alt]="'Imagen de ' + taller.nombre"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Contenido -->
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-900 mb-2">{{ taller.nombre }}</h2>
+        <p class="text-gray-600 mb-4">{{ taller.fecha }}</p>
+        <p class="font-bold text-xl text-red-500 mb-4">{{ taller.precio }}</p>
+
+         <!-- Temas -->
+         <div class="text-lg text-gray-600 text-justify w-full my-[2em]">
+          <p class="font-semibold">Temas:</p>
+          <ul class="list-disc list-inside">
+             <li *ngFor="let tema of taller.temas">{{ tema }}</li>
+          </ul>
+        </div>
+        <!-- Precio -->
+
+        <!-- Botón -->
+        <button class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800"  (click)="contactSupport()">
+          Quiero inscribirme
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

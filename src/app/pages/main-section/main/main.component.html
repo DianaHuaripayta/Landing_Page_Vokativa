@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+<section id="inicio">
+  <app-home-section></app-home-section>
+</section>
+
+<section id="talleres">
+  <app-section-of-our-workshops></app-section-of-our-workshops>
+</section>
+
+<section id="mentores">
+  <app-our-mentors-section></app-our-mentors-section>
+</section>
+
+<section id="testimonios">
+  <app-testimonials-section></app-testimonials-section>
+</section>
+
+<section id="contacto">
+  <app-contact-section></app-contact-section>
+</section>
+
+
+<!-- Botón flotante -->
+<button
+  class="fixed bottom-6 right-6 bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 px-6 rounded-full shadow-lg transform transition-transform hover:scale-110 cursor-pointer z-50"
+  (click)="contactSupport()"
+>
+ <img src="../../../../assets/Images/WhatsApp1.svg.png" alt="WhatsApp1" class="cursor-pointer" [width]="34">
+</button>
+
+

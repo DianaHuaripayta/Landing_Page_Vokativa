@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Nunito", serif;
+}
+:root {
+    --primary-color-green: #2ff75f;
+    --primary-color-pink: #df15b9;
+    --primary-color-yellow:#deed08;
+    --primary-color-grey: #f5f5f5;
+    --primary-color-blue: #066171;
+    --secondary-color-grey: #a1a1a1;
+    --color-red-light: #e398a1;
+    --color-primary-highlighted: #f1e559;
+    --secondary-color-white: #F9F6F6;
+  }
+  
+.bg-color-green {
+    background: var(--primary-color-green);
+}
+.bg-color-yellow {
+  background: var(--primary-color-yellow);
+}
+

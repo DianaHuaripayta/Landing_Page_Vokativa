@@ -1,0 +1,11 @@
+
+<div class="carousel">
+  <div class="carousel-item" *ngFor="let banner of banners; let i = index" [class.active]="i === activeIndex">
+    <ng-container *ngIf="banner.component === 'successful'">
+      <app-successful-experiences-banner></app-successful-experiences-banner>
+    </ng-container>
+    <ng-container *ngIf="banner.component === 'testimonials'">
+      <app-testimonials-banner></app-testimonials-banner>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<nav class="bg-gray-900 text-white py-4 px-6 flex justify-between items-center">
+  <div class="text-2xl font-bold">Vokativa</div>
+  <ul class="hidden md:flex space-x-6">
+    <li><button (click)="scrollTo('inicio')" class="hover:text-green-300">Inicio</button></li>
+    <li><button (click)="scrollTo('talleres')" class="hover:text-green-300">Nuestros Talleres</button></li>
+    <li><button (click)="scrollTo('mentores')" class="hover:text-green-300">Mentores</button></li>
+    <li><button (click)="scrollTo('testimonios')" class="hover:text-green-300">Testimonios</button></li>
+    <li><button (click)="scrollTo('contacto')" class="hover:text-green-300">Contáctanos</button></li>
+  </ul>
+  <button class="md:hidden text-green-300" (click)="toggleMenu = !toggleMenu">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+    </svg>
+  </button>
+</nav>
