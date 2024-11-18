@@ -7,6 +7,7 @@ import { SectionOfOurWorkshopsComponent } from '../section-of-our-workshops/sect
 import { TestimonialsSectionComponent } from '../testimonials-section/testimonials-section.component';
 import { ContactSectionComponent } from '../contact-section/contact-section.component';
 import { WhatsAppService } from '../../../services/whats-app.service';
+import { environment } from '../../../../environments/environment.prod';
 
 @Component({
   selector: 'app-main',
@@ -25,7 +26,7 @@ import { WhatsAppService } from '../../../services/whats-app.service';
 })
 export class MainComponent {
   whatsAppService = inject(WhatsAppService);
-
+  imagePath = `${environment.assetsBasePath}WhatsApp1.svg.png`;
   contactSupport(): void {
     const phoneNumber = '977703980'; // Número en formato internacional
     const message = 'Hola! Por favor quiero mayor información sobre el "Internship preuniversitario". ¡Espero tu respuesta!';
