@@ -1,6 +1,6 @@
-<div class="min-h-screen bg-gray-100 py-8 px-4">
-  <h1 class="text-center text-3xl md:text-4xl font-semibold mb-8">
-    Nuestros <span class="text-green-500">Talleres</span>
+<div class=" bg-gray-100 py-8 px-4">
+  <h1 class="text-center text-3xl md:text-4xl font-bold mb-8">
+    Nuestros <span class="text-green-500 font-bold">Talleres</span>
   </h1>
 
   <!-- Contenedor de tarjetas -->
@@ -34,7 +34,7 @@
         <!-- Precio -->
 
         <!-- Botón -->
-        <button class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800"  (click)="contactSupport()">
+        <button class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800"  (click)="contactSupport(taller.nombre)">
           Quiero inscribirme
         </button>
       </div>

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { NavbarComponent } from '../../../components/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { HomeSectionComponent } from '../home-section/home-section.component';
@@ -8,6 +8,8 @@ import { TestimonialsSectionComponent } from '../testimonials-section/testimonia
 import { ContactSectionComponent } from '../contact-section/contact-section.component';
 import { WhatsAppService } from '../../../services/whats-app.service';
 import { environment } from '../../../../environments/environment.prod';
+import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from "../../../components/footer/footer.component";
 
 @Component({
   selector: 'app-main',
@@ -15,22 +17,28 @@ import { environment } from '../../../../environments/environment.prod';
   imports: [
     NavbarComponent,
     CommonModule,
+    RouterOutlet,
     HomeSectionComponent,
     SectionOfOurWorkshopsComponent,
     OurMentorsSectionComponent,
     TestimonialsSectionComponent,
     ContactSectionComponent,
-  ],
+    FooterComponent
+],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css',
 })
 export class MainComponent {
-  whatsAppService = inject(WhatsAppService);
-  imagePath = `${environment.assetsBasePath}WhatsApp1.svg.png`;
-  contactSupport(): void {
-    const phoneNumber = '977703980'; // Número en formato internacional
-    const message = 'Hola! Por favor quiero mayor información sobre el "Internship preuniversitario". ¡Espero tu respuesta!';
-    this.whatsAppService.redirectToWhatsApp(phoneNumber, message);
-  }
 
+  // whatsAppService = inject(WhatsAppService);
+  imagePath = `${environment.assetsBasePath}WhatsApp1.svg.png`;
+  activeSection: string = 'inicio'; // Sección activa inicial
+  constructor(private whatsAppService: WhatsAppService) {}
+
+
+  contactSupport(): void {
+    // Ejemplo de uso correcto del servicio
+    const message = 'Hola! Por favor quiero mayor información. ¡Espero tu respuesta!';
+    this.whatsAppService.redirectToWhatsApp('977703980', message);
+  }
 }

@@ -1,50 +1,50 @@
-<div class="bg-yellow-300 min-h-screen flex flex-col justify-center items-center px-4">
-    <!-- Sección del encabezado -->
-    <div class="text-center mb-8">
-      <p class="text-pink-600 font-bold text-lg">Obtén Más Información</p>
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-        ¿Listo para dar el primer paso hacia tu futuro profesional?
-      </h1>
-      <p class="text-gray-800 mt-2">Contáctanos para obtener más información.</p>
-    </div>
-  
-    <!-- Formulario -->
-    <form class="w-full max-w-md bg-white rounded-lg shadow-lg p-6 space-y-4">
-      <div class="flex flex-col md:flex-row md:space-x-4">
-        <!-- Campo Nombre -->
-        <input
-          type="text"
-          placeholder="Nombre"
-          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-pink-500"
-        />
-        <!-- Campo Email -->
-        <input
-          type="email"
-          placeholder="Email"
-          class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-pink-500"
-        />
-      </div>
-  
-      <!-- Campo Mensaje -->
-      <textarea
-        placeholder="Escribe tu mensaje aquí..."
-        class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-pink-500"
-        rows="4"
-      ></textarea>
-  
-      <!-- Botón -->
-      <button
-        type="submit"
-        class="w-full bg-pink-500 text-white py-3 rounded-lg font-bold hover:bg-pink-600 transition"
-      >
-        Enviar Mensaje
-      </button>
-    </form>
-  
-    <!-- Información de contacto -->
-    <div class="mt-8 text-center text-gray-700">
-      <p>vokativa.lagmail.com | +51 977703980</p>
-      <p>Av. Principal 123, Lima, Perú</p>
-    </div>
+<div class="bg-yellow-300 min-h-screen flex flex-col items-center justify-evenly">
+  <!-- Sección del encabezado -->
+  <div class="text-center px-4">
+    <p class="text-pink-600 font-bold text-2xl lg:text-4xl">Obtén Más Información</p>
+    <p class="text-xl md:text-3xl lg:text-5xl font-bold text-gray-900 leading-tight mt-2">
+      ¿Listo para dar el primer paso hacia tu futuro profesional?
+    </p>
+    <p class="text-gray-800 mt-4 text-lg md:text-xl">Contáctanos para obtener más información.</p>
   </div>
-  
+
+  <!-- Formulario -->
+  <form 
+    [formGroup]="contactForm" 
+    (ngSubmit)="onSubmit()" 
+    class="w-full max-w-lg bg-white rounded-lg shadow-lg p-6 space-y-6"
+  >
+    <!-- Campos de entrada -->
+    <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+      <input
+        type="text"
+        formControlName="name"
+        placeholder="Nombre"
+        class="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-pink-500"
+      />
+      <input
+        type="email"
+        formControlName="email"
+        placeholder="Email"
+        class="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-pink-500"
+      />
+    </div>
+
+    <!-- Campo de mensaje -->
+    <textarea
+      formControlName="message"
+      placeholder="Escribe tu mensaje aquí..."
+      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-pink-500"
+      rows="4"
+    ></textarea>
+
+    <!-- Botón -->
+    <button
+      type="submit"
+      class="w-full bg-pink-500 text-white py-3 rounded-lg font-bold hover:bg-pink-600 transition disabled:opacity-50"
+      [disabled]="contactForm.invalid"
+    >
+      Enviar Mensaje
+    </button>
+  </form>
+</div>

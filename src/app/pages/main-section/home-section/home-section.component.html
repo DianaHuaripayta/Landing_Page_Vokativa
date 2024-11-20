@@ -10,14 +10,31 @@
   <span class="circle2"></span>
   <span class="circle small2"></span>
   <!-- Sección principal -->
-  <section class="text-center px-[15em] py-16 z-10 relative">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Taller "Pre Universitario" para elegir tu futura carrera profesional</h1>
-    <p class="text-lg mb-6 mx-[5em]">Nuestros talleres profesionales te brindarán un panorama completo sobre la carrera profesional que deseas estudiar.</p>
-    <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg"  (click)="contactSupport()">Quiero inscribirme</button>
+  <section class="text-center  py-16 z-10 relative">
+    <p class="	 md:text-5xl sm:text-6xl font-bold mb-4">Taller "Pre Universitario" para elegir tu futura carrera profesional</p>
+    <p class="md:text-2xl  sm:text-xl mb-6 mx-[5em]">Nuestros talleres profesionales te brindarán un panorama completo sobre la carrera profesional que deseas estudiar.</p>
+    <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg md:text-2xl  sm:text-xl"  (click)="contactSupport()">Quiero inscribirme</button>
   </section>
 
+  
   <!-- Imagen y contenido adicional -->
-  <div class="flex flex-col items-center px-4 z-10 relative">
-    <img [src]="imagePath" alt="Profesionales del campo laboral" class="w-full md:w-1/2 mb-6 md:mb-0">
-  </div>
+  <!-- <div class="flex flex-col items-center px-4 z-10 relative" *ngFor="let item of lstImages">
+    <img [src]="item.imagen" alt="Profesionales del campo laboral" class="w-full md:w-1/2 mb-6 md:mb-0">
+  </div> -->
+  <div class="card flex justify-center">
+    <p-galleria 
+        [value]="lstImages" 
+        [responsiveOptions]="responsiveOptions" 
+        [containerStyle]="{ 'max-width': '60vw' }" 
+        [numVisible]="5">
+            <ng-template pTemplate="item" let-item>
+                <img [src]="item.imagen" style="width: 100%;" />
+            </ng-template>
+            <ng-template pTemplate="thumbnail" let-item>
+                <div class="grid grid-nogutter justify-content-center">
+                    <img [src]="item.imagen" />
+                </div>
+            </ng-template>
+    </p-galleria>
+</div>
 </div>

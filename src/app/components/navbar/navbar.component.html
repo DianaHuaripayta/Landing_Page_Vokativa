@@ -1,11 +1,51 @@
-<nav class="bg-gray-900 text-white py-4 px-6 flex justify-between items-center">
+<nav class="bg-gray-900 text-white py-4 px-6 flex justify-between items-center sticky top-0 z-50 shadow-lg">
   <div class="text-2xl font-bold">Vokativa</div>
   <ul class="hidden md:flex space-x-6">
-    <li><button (click)="scrollTo('inicio')" class="hover:text-green-300">Inicio</button></li>
-    <li><button (click)="scrollTo('talleres')" class="hover:text-green-300">Nuestros Talleres</button></li>
-    <li><button (click)="scrollTo('mentores')" class="hover:text-green-300">Mentores</button></li>
-    <li><button (click)="scrollTo('testimonios')" class="hover:text-green-300">Testimonios</button></li>
-    <li><button (click)="scrollTo('contacto')" class="hover:text-green-300">Contáctanos</button></li>
+    <li>
+      <button
+        (click)="setActiveSection('inicio')"
+        [class.active]="activeSection === 'inicio'"
+        class="hover:text-green-300"
+      >
+        Inicio
+      </button>
+    </li>
+    <li>
+      <button
+        (click)="setActiveSection('talleres')"
+        [class.active]="activeSection === 'talleres'"
+        class="hover:text-green-300"
+      >
+        Nuestros Talleres
+      </button>
+    </li>
+    <li>
+      <button
+        (click)="setActiveSection('mentores')"
+        [class.active]="activeSection === 'mentores'"
+        class="hover:text-green-300"
+      >
+        Mentores
+      </button>
+    </li>
+    <li>
+      <button
+        (click)="setActiveSection('testimonios')"
+        [class.active]="activeSection === 'testimonios'"
+        class="hover:text-green-300"
+      >
+        Testimonios
+      </button>
+    </li>
+    <li>
+      <button
+        (click)="setActiveSection('contacto')"
+        [class.active]="activeSection === 'contacto'"
+        class="hover:text-green-300"
+      >
+        Contáctanos
+      </button>
+    </li>
   </ul>
   <button class="md:hidden text-green-300" (click)="toggleMenu = !toggleMenu">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -13,3 +53,15 @@
     </svg>
   </button>
 </nav>
+<!-- Menú móvil -->
+<ul
+  class="fixed top-[64px] left-0 w-full bg-gray-900 text-white py-4 px-6 space-y-4 md:hidden transition-all duration-300 z-50 h-full"
+  [ngClass]="{ hidden: !toggleMenu, block: toggleMenu }"
+>
+
+  <li class="text-xl my-[1rem]"><button (click)="scrollTo('inicio')" class="hover:text-green-300">Inicio</button></li>
+  <li class="text-xl my-[1rem]"><button (click)="scrollTo('talleres')" class="hover:text-green-300">Nuestros Talleres</button></li>
+  <li class="text-xl my-[1rem]"><button (click)="scrollTo('mentores')" class="hover:text-green-300">Mentores</button></li>
+  <li class="text-xl my-[1rem]"><button (click)="scrollTo('testimonios')" class="hover:text-green-300">Testimonios</button></li>
+  <li class="text-xl my-[1rem]"><button (click)="scrollTo('contacto')" class="hover:text-green-300">Contáctanos</button></li>
+</ul>

@@ -3,9 +3,8 @@
   width: 100%;
   height: 300px; /* Ajusta según la altura necesaria */
   overflow: hidden;
-  background-color: #e91e63; /* Fondo rosado */
+  background-color: #e91e63; 
 }
-
 .carousel::after {
   content: ' " Dedicarte a lo que te gusta. " '; /* El texto que deseas mostrar */
   position: absolute;
@@ -13,10 +12,12 @@
   left: 50%; /* Centrar horizontalmente */
   transform: translateX(-50%);
   color: #fff; /* Color del texto */
+  
   font-size: 34px; /* Tamaño de fuente */
   font-weight:700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombras para que el texto resalte */
 }
+
 .carousel-item {
   position: absolute;
   top: 0;

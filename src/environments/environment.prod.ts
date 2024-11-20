@@ -1,5 +1,4 @@
 export const environment = {
-  production: false,
-  assetsBasePath: '../../../../assets/Images/',
+  production: true,
+  assetsBasePath: 'assets/Images/',
   };
-  

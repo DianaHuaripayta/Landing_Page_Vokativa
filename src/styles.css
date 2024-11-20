@@ -17,6 +17,9 @@ body {
     --secondary-color-white: #F9F6F6;
   }
   
+  .bg-color-pink {
+    background: var(--primary-color-pink);
+}
 .bg-color-green {
     background: var(--primary-color-green);
 }

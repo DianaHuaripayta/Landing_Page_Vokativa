@@ -1,0 +1,12 @@
+button.active {
+    color: #22c55e; /* Verde */
+    border-bottom: 2px solid #22c55e; /* Línea verde debajo */
+  }
+  
+  button:hover {
+    color: #86efac; /* Verde más claro al pasar el mouse */
+  }
+  
+  button {
+    transition: color 0.3s, border-bottom 0.3s;
+  }

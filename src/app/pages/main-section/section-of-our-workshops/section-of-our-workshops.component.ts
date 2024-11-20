@@ -11,12 +11,16 @@ import { WhatsAppService } from '../../../services/whats-app.service';
   styleUrl: './section-of-our-workshops.component.css'
 })
 export class SectionOfOurWorkshopsComponent {
-  talleres = TALLERES;
+  talleres:any = [];
   whatsAppService = inject(WhatsAppService);
-
-  contactSupport(): void {
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this.talleres = TALLERES;
+  }
+  contactSupport(where :string): void {
     const phoneNumber = '977703980'; // Número en formato internacional
-    const message = 'Hola! Por favor quiero mayor información sobre el "Internship preuniversitario". ¡Espero tu respuesta!';
+    const message = `Hola! Por favor quiero mayor información sobre el ${where}. ¡Espero tu respuesta!`;
     this.whatsAppService.redirectToWhatsApp(phoneNumber, message);
   }
 

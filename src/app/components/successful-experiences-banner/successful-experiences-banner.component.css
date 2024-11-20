@@ -4,32 +4,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 34vh;
+    height: 100%;
     background-color: #e91e63; /* Fondo rosado */
     color: white;
     position: relative;
     overflow: hidden;
     text-align: center;
   }
-  
-  /* Título superior */
-  .banner-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    letter-spacing: 0.1em;
-  }
-  
-  /* Frase principal */
-  .banner-quote {
-    font-size: 2rem;
-    font-weight: bold;
-    max-width: 80%;
-    margin: 0 auto;
-    line-height: 1.5;
-  }
-  
   /* Decoraciones flotantes */
   .decorations {
     position: absolute;
