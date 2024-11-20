@@ -31,23 +31,17 @@ export class ContactSectionComponent {
   }
 
   submitToGoogleForm(formData: any) {
-    const name = formData.name;
-    const email = formData.email;
-    const message = formData.message;
-
-    this.service.createSheet(name,email, message)
-    .subscribe({
-      next:(res) =>{
-        formData.reset({
-          name: "",
-          email: "",
-          message: "",
-        });
-       // console.log(res, 'RESPONSE!!!! EXCEL')
+    const { name, email, message } = formData;
+  
+    this.service.createSheet(name, email, message).subscribe({
+      next: (res) => {
+        // Resetea el formulario completamente
+        this.contactForm.reset();
+        console.log('Formulario enviado con éxito:', res);
       },
-      error: (error)=>{
-        console.log(error, 'error!!')
+      error: (error) => {
+        console.error('Error al enviar el formulario:', error);
       }
-    })
+    });
   }
 }
