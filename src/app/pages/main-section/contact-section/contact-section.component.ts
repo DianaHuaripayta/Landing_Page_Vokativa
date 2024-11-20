@@ -38,6 +38,11 @@ export class ContactSectionComponent {
     this.service.createSheet(name,email, message)
     .subscribe({
       next:(res) =>{
+        formData.reset({
+          name: "",
+          email: "",
+          message: "",
+        });
        // console.log(res, 'RESPONSE!!!! EXCEL')
       },
       error: (error)=>{
