@@ -4,6 +4,7 @@ import { WhatsAppService } from '../../../services/whats-app.service';
 import { environment } from '../../../../environments/environment.prod';
 import { ImagesCorousel } from '../data-json/talleres_data';
 import { BehaviorSubject, Subscription, interval, map, timer } from 'rxjs';
+
 import { GalleriaModule } from 'primeng/galleria';
 @Component({
   selector: 'app-home-section',
