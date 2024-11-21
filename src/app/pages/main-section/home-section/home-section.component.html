@@ -17,24 +17,25 @@
   </section>
 
   
-  <!-- Imagen y contenido adicional -->
-  <!-- <div class="flex flex-col items-center px-4 z-10 relative" *ngFor="let item of lstImages">
-    <img [src]="item.imagen" alt="Profesionales del campo laboral" class="w-full md:w-1/2 mb-6 md:mb-0">
-  </div> -->
-  <div class="card flex justify-center">
-    <p-galleria 
-        [value]="lstImages" 
-        [responsiveOptions]="responsiveOptions" 
-        [containerStyle]="{ 'max-width': '60vw' }" 
-        [numVisible]="5">
-            <ng-template pTemplate="item" let-item>
-                <img [src]="item.imagen" style="width: 100%;" />
-            </ng-template>
-            <ng-template pTemplate="thumbnail" let-item>
-                <div class="grid grid-nogutter justify-content-center">
-                    <img [src]="item.imagen" />
-                </div>
-            </ng-template>
-    </p-galleria>
-</div>
+
+  <div class="slider">
+  
+    <div class="slides">
+      <div id="slide-1">
+        <img src="/assets/Images/1-img.png" alt="1-img">
+      </div>
+      <div id="slide-2">
+        <img src="/assets/Images/2-img.png" alt="2-img">
+      </div> 
+      <div id="slide-3">
+        <img src="/assets/Images/1-img.png" alt="1-img">
+      </div> 
+      <div id="slide-4">
+        <img src="/assets/Images/2-img.png" alt="1-img">
+      </div>
+      <div id="slide-5">
+        <img src="/assets/Images/3-img.png" alt="2-img">
+      </div>
+    </div>
+  </div>
 </div>

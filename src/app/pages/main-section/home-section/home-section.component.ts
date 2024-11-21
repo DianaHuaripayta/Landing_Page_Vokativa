@@ -16,22 +16,16 @@ export class HomeSectionComponent {
   whatsAppService = inject(WhatsAppService);
   lstImages = ImagesCorousel;
   responsiveOptions: any[] | undefined;
+  isMobile: boolean = false; // Bandera para indicar si es móvil.
   ngOnInit() {
     this.responsiveOptions = [
-        {
-            breakpoint: '1024px',
-            numVisible: 5
-        },
-        {
-            breakpoint: '768px',
-            numVisible: 3
-        },
-        {
-            breakpoint: '560px',
-            numVisible: 1
-        }
+      { breakpoint: '1024px', numVisible: 5 },
+      { breakpoint: '768px', numVisible: 3 },
+      { breakpoint: '560px', numVisible: 1 }
     ];
-}
+  
+  }
+
   contactSupport(): void {
     const phoneNumber = '977703980'; // Número en formato internacional
     const message = 'Hola! Por favor quiero mayor información". ¡Espero tu respuesta!';

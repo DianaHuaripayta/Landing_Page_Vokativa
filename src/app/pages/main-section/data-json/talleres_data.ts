@@ -32,12 +32,15 @@ export const TALLERES = [
 ];
 export const ImagesCorousel = [
   {
-    imagen: `${environment.assetsBasePath}1-img.png`
+    imagen: `${environment.assetsBasePath}1-img.png`,
+    id: "slide-1",
   },
   { 
-    imagen: `${environment.assetsBasePath}2-img.png`
+    imagen: `${environment.assetsBasePath}2-img.png`,
+    id: "slide-2",
   },
   {
-    imagen: `${environment.assetsBasePath}3-img.png`
+    imagen: `${environment.assetsBasePath}3-img.png`,
+    id: "slide-3",
   }
 ];
