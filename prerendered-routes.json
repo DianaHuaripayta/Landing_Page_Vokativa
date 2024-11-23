@@ -1,9 +1,5 @@
 {
   "routes": [
-    "/",
-    "/contacto",
-    "/mentores",
-    "/talleres",
-    "/testimonios"
+    "/"
   ]
 }
