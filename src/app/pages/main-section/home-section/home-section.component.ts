@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, NgZone, inject } from '@angular/core';
 import { WhatsAppService } from '../../../services/whats-app.service';
 import { environment } from '../../../../environments/environment.prod';
-import { ImagesCorousel } from '../data-json/talleres_data';
 import { BehaviorSubject, Subscription, interval, map, timer } from 'rxjs';
 
 import { GalleriaModule } from 'primeng/galleria';
@@ -15,7 +14,6 @@ import { GalleriaModule } from 'primeng/galleria';
 })
 export class HomeSectionComponent {
   whatsAppService = inject(WhatsAppService);
-  lstImages = ImagesCorousel;
   responsiveOptions: any[] | undefined;
   isMobile: boolean = false; // Bandera para indicar si es móvil.
   ngOnInit() {
@@ -28,9 +26,11 @@ export class HomeSectionComponent {
   }
 
   contactSupport(): void {
-    const phoneNumber = '977703980'; // Número en formato internacional
-    const message = 'Hola! Por favor quiero mayor información". ¡Espero tu respuesta!';
-    this.whatsAppService.redirectToWhatsApp(phoneNumber, message);
+    // const phoneNumber = '977703980'; // Número en formato internacional
+    // const message = 'Hola! Por favor quiero mayor información". ¡Espero tu respuesta!';
+    // this.whatsAppService.redirectToWhatsApp(phoneNumber, message);
+    window.open('https://forms.gle/P4GSj8bb3KBZwK7j9', '_blank');
+
   }
 
 }

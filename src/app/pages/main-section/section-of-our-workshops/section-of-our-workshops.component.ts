@@ -19,9 +19,11 @@ export class SectionOfOurWorkshopsComponent {
     this.talleres = TALLERES;
   }
   contactSupport(where :string): void {
-    const phoneNumber = '977703980'; // Número en formato internacional
-    const message = `Hola! Por favor quiero mayor información sobre el ${where}. ¡Espero tu respuesta!`;
-    this.whatsAppService.redirectToWhatsApp(phoneNumber, message);
+    // const phoneNumber = '977703980'; // Número en formato internacional
+    // const message = `Hola! Por favor quiero mayor información sobre el ${where}. ¡Espero tu respuesta!`;
+    // this.whatsAppService.redirectToWhatsApp(phoneNumber, message);
+    window.open('https://forms.gle/P4GSj8bb3KBZwK7j9', '_blank');
+
   }
 
 }
