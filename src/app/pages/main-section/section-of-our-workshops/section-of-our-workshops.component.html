@@ -21,8 +21,8 @@
       <!-- Contenido -->
       <div class="p-4">
         <h2 class="text-lg font-semibold text-gray-900 mb-2">{{ taller.nombre }}</h2>
-        <p class="text-gray-600 mb-4">{{ taller.fecha }}</p>
-        <p class="font-bold text-xl text-red-500 mb-4">{{ taller.precio }}</p>
+        <!-- <p class="text-gray-600 mb-4">{{ taller.fecha }}</p> -->
+        <!-- <p class="font-bold text-xl text-red-500 mb-4">{{ taller.precio }}</p> -->
 
          <!-- Temas -->
          <div class="text-lg text-gray-600 text-justify w-full my-[2em]">
@@ -31,7 +31,6 @@
              <li *ngFor="let tema of taller.temas">{{ tema }}</li>
           </ul>
         </div>
-        <!-- Precio -->
 
         <!-- Botón -->
         <button class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800"  (click)="contactSupport(taller.nombre)">

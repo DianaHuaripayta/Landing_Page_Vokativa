@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, NgZone, inject } from '@angular/core';
 import { WhatsAppService } from '../../../services/whats-app.service';
 import { environment } from '../../../../environments/environment.prod';
-import { BehaviorSubject, Subscription, interval, map, timer } from 'rxjs';
 
 import { GalleriaModule } from 'primeng/galleria';
 @Component({
@@ -10,7 +9,8 @@ import { GalleriaModule } from 'primeng/galleria';
   standalone: true,
   imports: [CommonModule, GalleriaModule],
   templateUrl: './home-section.component.html',
-  styleUrl: './home-section.component.css'
+  styleUrl: './home-section.component.css',
+  
 })
 export class HomeSectionComponent {
   whatsAppService = inject(WhatsAppService);
@@ -32,5 +32,6 @@ export class HomeSectionComponent {
     window.open('https://forms.gle/P4GSj8bb3KBZwK7j9', '_blank');
 
   }
+
 
 }

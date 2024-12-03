@@ -7,7 +7,6 @@ import { environment } from '../../../environments/environment.prod';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
 })
 export class FooterComponent {
   pathImg :string = environment.assetsBasePath;
