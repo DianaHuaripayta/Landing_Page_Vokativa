@@ -7,6 +7,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 
 export function Contact(){
+
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors]:any = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,6 +29,8 @@ export function Contact(){
   };
 
   const handleSubmit = async (e:any) => {
+    const CONNECTION_URL:string = "https://api.sheetbest.com/sheets/b836ac35-20d7-483a-87b7-f714715beba0";
+
     e.preventDefault();
 
     const validationErrors = validate();
@@ -40,17 +43,17 @@ export function Contact(){
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/submit-form", {
+      const response = await fetch(CONNECTION_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
 
       if (response.ok) {
-        alert("Formulario enviado con éxito");
+      //  alert("Formulario enviado con éxito");
         setForm({ name: "", email: "", message: "" });
       } else {
-        alert("Error al enviar el formulario.");
+        //alert("Error al enviar el formulario.");
       }
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
@@ -58,7 +61,6 @@ export function Contact(){
       setIsSubmitting(false);
     }
   };
-
   const handleChange = (e:any) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
