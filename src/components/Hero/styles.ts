@@ -53,15 +53,6 @@ export const CarouselContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-
-  /* .slick-list .slick-slide:nth-child(even) {
-    background-color: ${colors.blue};
-  }
-
-  .slick-list .slick-slide:nth-child(odd) {
-    background-color: ${colors.blue};
-  } */
-
   .slick-arrow {
     z-index: 1;
     width: 40px;
@@ -131,7 +122,7 @@ export const ContainerImg = styled.div`
   img {
     width: 100%;
     max-width: 100%;
-    height: 42em;
+    /* height: 42em; */
     border-radius: 10px;
     object-fit: contain;
   }
