@@ -20,7 +20,12 @@ export const GlobalStyle = createGlobalStyle`
       .logo{
         color: var(--black);
       }
-
+      .slider-container h3{
+        color:  var(--black) !important;
+      }
+      .slider-container p{
+        color:  var(--black) !important;
+      }
       header.header-fixed{
         transition: 0.5s;
         background-color: #f5f5f550;

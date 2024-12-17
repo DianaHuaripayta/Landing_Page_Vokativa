@@ -14,7 +14,6 @@ export const Container = styled.section`
 
     h2 {
       font-size: 4rem;
-      color: var(--white);
       font-weight: bold;
     }
 
