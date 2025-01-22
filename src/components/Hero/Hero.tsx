@@ -5,15 +5,15 @@ import Slider from "react-slick";
 export function Hero() {
   const  images = [
     {
-      url: '../../assets/A.png', 
+      url: 'https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/A.png', 
       name :'1'
     },
     {
-      url: '../../assets/B.png', 
+      url: 'https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/B.png', 
       name :'2'
     },
     {
-      url: '../../assets/C.png', 
+      url: 'https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/C.png', 
       name :'3'
     },
   ]
