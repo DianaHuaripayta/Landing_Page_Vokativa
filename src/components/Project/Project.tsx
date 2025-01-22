@@ -14,7 +14,7 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
           <header>
-            <img src="https://i.imgur.com/hazXpMk.jpeg" alt="Taller de Ingeniería" />
+            <img src="https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/CienciasEmpresariales.jpg" alt="Taller de Ingeniería" />
           </header>
             <div className="body">
             <h3>Taller de Ingeniería</h3>
@@ -37,7 +37,7 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
           <header>
-            <img src="https://i.imgur.com/E4anGI8.jpeg" alt="Taller de Ciencias Empresariales" />
+            <img src="https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/negocios.jpg" alt="Taller de Ciencias Empresariales" />
           </header>
             <div className="body">
             <h3>Taller de Ciencias Empresariales</h3>
@@ -61,7 +61,7 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
           <header>
-            <img src="https://i.imgur.com/9CdJ3MK.jpeg" alt="Taller de Tecnología" />
+            <img src="https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/tecnologia.jpg" alt="Taller de Tecnología" />
           </header>
             <div className="body">
             <h3>Taller de Tecnología</h3>
@@ -84,7 +84,7 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
           <header>
-            <img src="https://i.imgur.com/IuBoJfX.jpeg" alt="Taller de Ciencias de la Salud" />
+            <img src="https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/cienciaDeLaSalud.jpg" alt="Taller de Ciencias de la Salud" />
           </header>
             <div className="body">
             <h3>Taller de Ciencias de la Salud</h3>
