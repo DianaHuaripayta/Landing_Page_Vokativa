@@ -78,10 +78,17 @@ export function Contact(){
         </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
-        <p>Contáctanos para obtener más información.</p>
+        <p>Para contactarnos, por favor rellena nuestro.</p>
+        <a href="https://forms.gle/B6pqYPdap48WuBCt8"    target="_blank"
+          rel="noreferrer">Aquí</a>
+        {/*<p>Contáctanos para obtener más información.</p> */}
         </ScrollAnimation>
       </ header>
-      <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
+      {/* <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
+      <p>
+        Para contactarnos, por favor rellena nuestro{" "} 
+        <a href="https://forms.gle/B6pqYPdap48WuBCt8">Aquí</a>
+      </p>
       <form
         onSubmit={handleSubmit}
         className="container-form"
@@ -123,7 +130,7 @@ export function Contact(){
           {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
         </button>
       </form>
-          </ScrollAnimation>
+          </ScrollAnimation> */}
               
 
     </div>
