@@ -37,7 +37,7 @@ export function Project() {
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
           <header>
-            <img src="https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/negocios.jpg" alt="Taller de Ciencias Empresariales" />
+            <img src="https://raw.githubusercontent.com/DianaHuaripayta/Landing_Page_Vokativa/refs/heads/styled-pages/src/assets/Empresariales.jpg" alt="Taller de Ciencias Empresariales" />
           </header>
             <div className="body">
             <h3>Taller de Ciencias Empresariales</h3>
