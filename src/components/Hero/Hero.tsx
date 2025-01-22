@@ -5,15 +5,15 @@ import Slider from "react-slick";
 export function Hero() {
   const  images = [
     {
-      url: 'https://i.imgur.com/G2KzKjS_d.webp?maxwidth=1520&fidelity=grand', 
+      url: '../../assets/A.png', 
       name :'1'
     },
     {
-      url: 'https://i.imgur.com/KXeF9AG.png', 
+      url: '../../assets/B.png', 
       name :'2'
     },
     {
-      url: 'https://i.imgur.com/jvtNTrB.png', 
+      url: '../../assets/C.png', 
       name :'3'
     },
   ]
