@@ -117,4 +117,10 @@ export const Container = styled.section`
       flex-direction: column;
     }
   }
+  a{
+    color:var(--pink);
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+  }
 `;
