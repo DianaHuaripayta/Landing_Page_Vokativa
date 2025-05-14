@@ -21,7 +21,7 @@ const V3D = () => {
 
       {/* 🔹 Letra "V" */}
       <Text
-        font={"fonts/Poppins-ExtraBold.ttf"}
+        font={"/fonts/Poppins-ExtraBold.ttf"}
         fontSize={1.6}
         position={[-5.9, 0.1, 0]}
       >
@@ -31,7 +31,7 @@ const V3D = () => {
 
       {/* 🔹 Asterisco debajo de la "V" */}
       <Text
-        font={"fonts/Poppins-ExtraBold.ttf"}
+        font={"/fonts/Poppins-ExtraBold.ttf"}
         fontSize={1}
         position={[-5.9, -1, 0]}
       >
@@ -41,7 +41,7 @@ const V3D = () => {
 
       {/* 🔹 Resto de la palabra "OKATIVA" */}
       <Text
-        font={"fonts/Poppins-ExtraBold.ttf"}
+        font={"/fonts/Poppins-ExtraBold.ttf"}
         fontSize={2}
         position={[-0.6, 0, 0]}
       >

@@ -23,7 +23,7 @@ const Slogan3D = () => {
   return (
     <group position={[0, -1, 0]}>
       <OrbitControls />
-      <Text font={"fonts/Poppins-SemiBold.ttf"} fontSize={0.7}>
+      <Text font={"/fonts/Poppins-SemiBold.ttf"} fontSize={0.7}>
         {displayText} {/* 🔹 Texto que aparece progresivamente */}
         <meshBasicMaterial color="#ffff" />
       </Text>
