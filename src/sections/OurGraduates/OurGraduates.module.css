@@ -1,0 +1,76 @@
+.graduates_section {
+    background-color: #2a2684;
+    padding: 3rem 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .graduates_title {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: poppins;
+    margin-bottom: 2.5rem;
+  }
+  
+  .graduates_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .graduate_card {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .graduate_img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #ff3dbd;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  
+  .graduate_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .graduate_quote {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .graduate_name {
+    font-weight: 300;
+    font-family: poppins;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .graduate_school {
+    font-size: 1rem;
+    color: white;
+    font-family: poppins;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .graduates_container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .graduate_card {
+      max-width: 90%;
+    }
+  }
+  

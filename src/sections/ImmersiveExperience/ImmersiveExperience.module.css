@@ -1,0 +1,56 @@
+.immersiveExperience {
+    background-color: #f5edf9;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .titleBox {
+    position: relative;
+    display: inline-block;
+    border: 3px dashed #a855f7;
+    border-radius: 12px;
+    padding: 0.5rem 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: #a855f7;
+    font-weight: 600;
+    margin: 0;
+    font-family: poppins, sans-serif;
+  }
+  
+  .pin {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .feature {
+    flex: 1 1 200px;
+    max-width: 300px;
+  }
+  
+  .icon {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature p {
+    color: #9333ea;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: poppins, sans-serif;
+  }

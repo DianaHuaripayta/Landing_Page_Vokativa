@@ -1,0 +1,166 @@
+/* Ajuste general */
+.impact_section {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #F7E385;
+    padding: 2em 8em;
+    position: relative;
+  }
+  
+  /* Títulos */
+  .impact_section h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: poppins;
+    margin-bottom: 1rem;
+  }
+  
+  .impact_section h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: poppins;
+    margin-bottom: 2rem;
+    padding: 1em 6em;
+    text-align: center;
+  }
+  
+  /* Párrafo */
+  .impact_section p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: poppins;
+    margin-bottom: 2rem;
+    text-align: right;
+    color: #DF15B9;
+  }
+  
+  /* Botón contenedor */
+  .impact_section div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  /* Botón */
+  .impact_section div button {
+    font-weight: 500;
+    font-family: poppins;
+    width: 50%;
+    background-color: #DF15B9;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 25px;
+    border: solid 4px #fff;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .impact_section button:hover {
+    background-color: #fff;
+    color: #DF15B9;
+    border: solid 4px #DF15B9;
+  }
+  
+  /* Imagen decorativa */
+  .impact_img img {
+    position: absolute;
+    bottom: 16rem;
+    left: 0rem;
+    width: 21em;
+  }
+  
+  /* -------------------------- */
+  /* RESPONSIVE DESIGN */
+  /* -------------------------- */
+  
+  /* Tablets */
+  @media (max-width: 1024px) {
+    .impact_section {
+      padding: 2em 4em;
+    }
+  
+    .impact_section h1 {
+      font-size: 3rem;
+    }
+  
+    .impact_section h2 {
+      font-size: 1.5rem;
+      padding: 1em 2em;
+    }
+  
+    .impact_section p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .impact_section div {
+      align-items: center;
+    }
+  
+    .impact_section div button {
+      width: 80%;
+    }
+  
+    .impact_img img {
+      width: 100px;
+    }
+  }
+  
+  /* Móviles */
+  @media (max-width: 768px) {
+    .impact_section {
+      padding: 2em;
+    }
+  
+    .impact_section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .impact_section h2 {
+      font-size: 1.2rem;
+      padding: 1em;
+    }
+  
+    .impact_section p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .impact_section div button {
+      width: 100%;
+      font-size: 1.2rem;
+    }
+  
+    .impact_img img {
+      position: static;
+      margin-top: -14rem;
+      align-self: center;
+      width: 80px;
+    }
+  }
+  
+  /* Extra pequeños */
+  @media (max-width: 480px) {
+    .impact_section h1 {
+      font-size: 2rem;
+    }
+  
+    .impact_section h2 {
+      font-size: 1rem;
+    }
+  
+    .impact_section p {
+      font-size: 0.9rem;
+    }
+  
+    .impact_section div button {
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,43 @@
+/* styles.module.css */
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .headerScrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* fondo oscuro semitransparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* opcional: sombra */
+  }
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0em 2em;
+}
+/* .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} */
+.left > img{
+    padding: 0em 2em;
+}
+.icon{
+    font-size: 3rem; /* o 48px */
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.iconScrolled {
+    color: #ffff;
+  }

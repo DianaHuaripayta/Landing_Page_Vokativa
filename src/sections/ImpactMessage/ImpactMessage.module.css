@@ -1,0 +1,85 @@
+.impactMessage_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Contenedor relativo */
+  .overlay {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Imagen de fondo */
+  .impactMessageBg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Título */
+  .overlay h1 {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: poppins;
+    font-size: 4em;
+    color: #2B2D42;
+    padding: 0 1em;
+  }
+  
+  /* Logo */
+  .logo {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: auto;
+  }
+  
+  /* ----------------------- */
+  /*     RESPONSIVE         */
+  /* ----------------------- */
+  
+  @media (max-width: 1024px) {
+    .overlay h1 {
+    width: 80%;
+      font-size: 2.5em;
+      top: 18%;
+    }
+  
+    .logo {
+      width: 25%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .overlay h1 {
+      font-size: 2em;
+      top: 15%;
+    }
+  
+    .logo {
+      width: 30%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .overlay h1 {
+        width: 80%;
+      font-size: 1.2em;
+      top: 12%;
+      padding: 0 1em;
+    }
+  
+    .logo {
+      width: 20%;
+    }
+  }

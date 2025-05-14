@@ -1,0 +1,146 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+    z-index: -1; /* Envía el video al fondo */
+}
+.heroContent {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté encima del video */
+    text-align: center;
+    padding: 0rem 8rem;
+}
+.title {
+    font-size: 6rem;
+    color: #fff;
+    font-family: "Poppins-SemiBold", sans-serif;
+    margin: 0;
+}
+.span {
+    font-size: 6rem;
+    color: #DF15B9;
+    font-family: "Poppins-SemiBold", sans-serif;
+}
+.paragraph {
+    font-size: 2rem;
+    color: #fff;
+    text-align:right;
+    font-family: "Poppins", sans-serif;
+}
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttonContainer button{
+    background-color: #DF15B9;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 25px;
+    border: solid 4px #fff;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+.icon {
+    font-size: 3rem; /* o 48px */ 
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento al pasar el mouse */
+}
+/* Responsive para pantallas menores a 1024px */
+@media (max-width: 1024px) {
+    .heroContent {
+      padding: 0rem 4rem;
+    }
+  
+    .title,
+    .span {
+      font-size: 4rem;
+    }
+  
+    .paragraph {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .buttonContainer {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .buttonContainer button {
+      width: 100%;
+      max-width: 300px;
+      font-size: 1.3rem;
+    }
+  
+    .icon {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Responsive para pantallas menores a 768px */
+  @media (max-width: 768px) {
+    .heroContent {
+      padding: 0rem 2rem;
+    }
+  
+    .title,
+    .span {
+      font-size: 3rem;
+    }
+  
+    .paragraph {
+      font-size: 1.3rem;
+    }
+  
+    .buttonContainer button {
+      font-size: 1.2rem;
+      padding: 0.8rem 1.5rem;
+    }
+  
+    .icon {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Responsive para móviles pequeños */
+  @media (max-width: 480px) {
+    .title,
+    .span {
+      font-size: 2.3rem;
+    }
+  
+    .paragraph {
+      font-size: 1.1rem;
+    }
+  
+    .buttonContainer button {
+      font-size: 1rem;
+      padding: 0.7rem 1.2rem;
+    }
+  
+    .icon {
+      font-size: 1.8rem;
+    }
+  }

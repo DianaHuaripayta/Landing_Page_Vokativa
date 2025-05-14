@@ -1,0 +1,60 @@
+.canvas_container  {
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-linear-gradient(90deg, #ff0000, #ff00ff, #8d00f1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg, #ff0000, #ff00ff, #8d00f1);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* 🔹 Pantalla de bienvenida */
+.welcome_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* 🔹 Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white;
+    font-size: 2em;
+    font-family: "Poppins", sans-serif; */
+    z-index: 1000;
+}
+
+/* 🔹 Animación de entrada y salida */
+.fade_in_out {
+    animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #ffff;
+}
