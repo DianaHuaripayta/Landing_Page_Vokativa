@@ -12,12 +12,6 @@ function App() {
       </Route>
     </Routes>
   </>    
-    // <Routes>
-    //   <Route path="/" element={<WelcomeScreen />} />
-    //   <Route element={<Layout />}>
-    //     <Route path="/home" element={<Home />} />
-    //   </Route>
-    // </Routes>
   );
 }
 
