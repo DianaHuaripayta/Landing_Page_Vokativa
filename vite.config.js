@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Landing_Page_Vokativa/', // 👈🏻 muy importante: usa el nombre exacto de tu repositorio
+  base: '/Landing_Page_Vokativa/', // 👈 esto es CLAVE
   plugins: [react()],
 })
