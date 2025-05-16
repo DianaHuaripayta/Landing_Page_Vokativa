@@ -1,70 +1,66 @@
-.ourWorkshop{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: #A0D5CD;
-    font-family: poppins;
+.ourWorkshop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #A0D5CD;
+  font-family: 'Poppins', sans-serif;
 }
-/* Ajuste general para video en pantallas grandes */
+
+/* Video - versión base (escritorio) */
 .ourWorkshop video {
-    position: relative;
-    top: -4rem;
-    left: 0;
-    transform: none;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    object-fit: cover;
-    z-index: 0;
-    border-radius: 20px;
-  }
-  
-  /* Ajuste del párrafo */
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+/* Texto - versión base */
+.ourWorkshop p {
+  color: #2B2D42;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  padding: 1em 2em;
+  text-align: center;
+  max-width: 900px;
+}
+
+/* Tablets y menores */
+@media (max-width: 1024px) {
   .ourWorkshop p {
-    font-family: poppins;
-    color: #2B2D42;
-    font-size: 2em;
-    padding: 1em 4em;
-    text-align: center;
-    max-width: 900px;
+    font-size: 1.3em;
+    padding: 1em 1.5em;
   }
-  
-  /* Responsive: Tablets y menores */
-  @media (max-width: 1024px) {
-    .ourWorkshop p {
-      font-size: 1.5em;
-      padding: 1em 2em;
-    }
-  
-    .ourWorkshop video {
-      top: 2rem;
-      max-width: 90%;
-    }
+
+  .ourWorkshop video {
+    max-width: 95%;
   }
-  
-  /* Responsive: Móviles */
-  @media (max-width: 768px) {
-    .ourWorkshop p {
-      font-size: 1.2em;
-      padding: 1em;
-    }
-  
-    .ourWorkshop video {
-      top: -2rem;
-      width: 100%;
-      max-width: 100%;
-    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .ourWorkshop p {
+    font-size: 1.1em;
+    padding: 1em;
   }
-  
-  /* Extra pequeño */
-  @media (max-width: 480px) {
-    .ourWorkshop p {
-      font-size: 1em;
-    }
-  
-    .ourWorkshop video {
-      border-radius: 10px;
-    }
+
+  .ourWorkshop video {
+    height: auto;
+    max-width: 100%;
   }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 480px) {
+  .ourWorkshop p {
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  .ourWorkshop video {
+    height: auto;
+    max-width: 100%;
+  }
+}

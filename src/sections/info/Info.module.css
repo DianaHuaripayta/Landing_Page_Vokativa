@@ -21,21 +21,22 @@
     position: relative;
     background: rgba(255, 0, 150, 0.7);
     border-radius: 20px;
-    padding: 2rem;
+    padding: 4rem;
     max-width: 900px;
     text-align: center;
     color: white;
   }
   
   .info_content h2 {
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: clamp(3rem, 4rem, 5rem);
     font-weight: 600;
     font-family: poppins;
     margin-bottom: 1rem;
   }
   
   .info_content p {
-    font-size: 1.1rem;
+      font-size: clamp(1rem, 2rem, 3rem);
     font-weight: 500;
     font-family: poppins;
     margin-bottom: 2rem;
@@ -47,7 +48,7 @@
     padding: 0.8rem 1.5rem;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 1rem;
+   font-size: clamp(1rem, 2rem, 3rem);
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -58,15 +59,14 @@
   
   /* Decoración: flecha curva con CSS (simulada) */
   .arrow_decoration {
-    position: absolute;
-    left: -60px;
-    bottom: -40px;
-    width: 200px;
-    height: 200px;
-    background: url('../../assets/img/arrow.png') no-repeat;
-    background-size: contain;
+   position: absolute;
+  left: clamp(-40px, -4vw, -60px);
+  bottom: clamp(-130px, -9vw, -140px);
+  width: clamp(200px, 30vw, 400px);
+  height: clamp(200px, 30vw, 400px);
+  background: url('../../assets/img/arrow.png') no-repeat;
+  background-size: contain;
   }
-  
   /* Responsividad */
   @media (max-width: 768px) {
     .info_content h2 {

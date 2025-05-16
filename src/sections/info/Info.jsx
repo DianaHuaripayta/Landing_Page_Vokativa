@@ -14,7 +14,7 @@ const Info = () => {
             Tecnología y Sistemas <span role="img" aria-label="tech">👨‍💻</span>
           </h2>
           <p>
-            Aprende qué hace un profesional tech, crea tu primer proyecto web, <br />
+            Aprende qué hace un profesional tech, crea tu primer proyecto web,
             y descubre si esta carrera se alinea con tu vocación.
           </p>
           <button className={styles.info_button}>Postula al taller ahora</button>

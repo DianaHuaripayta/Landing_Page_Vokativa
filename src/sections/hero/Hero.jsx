@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className={styles.title}>¿Y si pudieras vivir una carrera <span className={styles.span}>tecnológica </span> antes de elegirla?</h1>
         <p className={styles.paragraph}>En <strong>Vokativa</strong>  te damos más que información, te hacemos vivir con experiencias reales tu futura carrera profesional en <strong>Tech</strong>.</p>
         <div className={styles.buttonContainer}>
-        <ArrowCircleDownIcon className={styles.icon} fontSize="large" />
+        {/* <ArrowCircleDownIcon className={styles.icon} fontSize="large" /> */}
           <button>Quiero vivir la experiencia</button>
         </div>
       </div>

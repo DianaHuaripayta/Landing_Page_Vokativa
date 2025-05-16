@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2rem;
-    max-width: 1000px;
+    max-width: 2000px;
     margin: 0 auto;
   }
   
@@ -44,13 +44,13 @@
   }
   
   .icon {
-    width: 200px;
+    width: 300px;
     margin-bottom: 1rem;
   }
   
   .feature p {
     color: #9333ea;
     font-weight: 500;
-    font-size: 1rem;
+     font-size: clamp(1rem, 1.3rem, 2rem);
     font-family: poppins, sans-serif;
   }

@@ -17,7 +17,7 @@ export class About extends Component {
           <img
             src={aboutImage}
             alt="Sobre nosotros"
-            style={{ width: "90%", height: "auto", borderRadius: "8px" }}
+            className={styles.aboutImage}
           />
         </div>
       </div>
