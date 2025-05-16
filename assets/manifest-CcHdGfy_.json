@@ -10,12 +10,12 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/assets/img/brand_vk.png",
+      "src": "./src/assets/img/brand_vk.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/img/brand_vk.png",
+      "src": "./src/assets/img/brand_vk.png",
       "type": "image/png",
       "sizes": "512x512"
     }
