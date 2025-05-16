@@ -1,5 +1,4 @@
 import React from "react";
-import BackgroundAnimation from "../../Components/BackgroundAnimation";
 import Hero from "../../sections/hero/Hero";
 import About from "../../sections/about/About";
 import ImmersiveExperience from "../../sections/immersiveExperience/ImmersiveExperience";
@@ -11,23 +10,31 @@ import ImpactMessage from "../../sections/impactMessage/ImpactMessage";
 const Home = () => {
   return (
     <>
-    <Hero/>
-    <About/>
-    <ImmersiveExperience/>
-    <Info/>
-    <OurGraduates/>
-    <OurWorkshop/>
-    <Impact/>
-    <ImpactMessage/> 
-    {/* 
-   
-   
-
-   
-    
-    <ImpactMessage/> */}
-        {/* <BackgroundAnimation />  */}
-  </>
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="immersive">
+        <ImmersiveExperience />
+      </div>
+      <div id="info">
+        <Info />
+      </div>
+      <div id="graduates">
+        <OurGraduates />
+      </div>
+      <div id="workshop">
+        <OurWorkshop />
+      </div>
+      <div id="impact">
+        <Impact />
+      </div>
+      <div id="impactMessage">
+        <ImpactMessage />
+      </div>
+    </>
   );
 };
 export default Home;

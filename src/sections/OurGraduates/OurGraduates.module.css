@@ -6,7 +6,7 @@
   }
   
   .graduates_title {
-    font-size: 2rem;
+ font-size: clamp(1rem, 2rem, 3rem);
     font-weight: 600;
     font-family: poppins;
     margin-bottom: 2.5rem;
@@ -44,7 +44,7 @@
   
   .graduate_quote {
     font-style: italic;
-    font-size: 1rem;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
     margin-bottom: 1rem;
     color: #fff;
   }
@@ -53,11 +53,11 @@
     font-weight: 300;
     font-family: poppins;
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
   }
   
   .graduate_school {
-    font-size: 1rem;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
     color: white;
     font-family: poppins;
   }

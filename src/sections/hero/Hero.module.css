@@ -1,7 +1,8 @@
 .hero {
-    position: relative;
+    /* position: relative;
+    bottom: 4em; */
     width: 100%;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+    height: 92vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -24,38 +25,45 @@
     padding: 0rem 8rem;
 }
 .title {
-    font-size: 6rem;
+  font-size: clamp(0.5rem, 10vw, 6rem);
     color: #fff;
-    font-family: "Poppins-SemiBold", sans-serif;
+    text-align: right;
+    font-family: poppins;
     margin: 0;
 }
 .span {
-    font-size: 6rem;
+   font-size: clamp(0.5rem, 12vw, 6rem);
+    text-align: right;
     color: #DF15B9;
-    font-family: "Poppins-SemiBold", sans-serif;
+    font-family: poppins;
 }
 .paragraph {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+      font-size: clamp(1rem, 1.5vw, 5rem);
     color: #fff;
     text-align:right;
-    font-family: "Poppins", sans-serif;
+    font-family: poppins;
 }
 .buttonContainer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: end;
 }
 .buttonContainer button{
+   font-family: poppins;
     background-color: #DF15B9;
     color: #fff;
     border: none;
     padding: 1rem 2rem;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     cursor: pointer;
     border-radius: 25px;
     border: solid 4px #fff;
     margin-top: 2rem;
     transition: background-color 0.3s ease;
+      font-size: clamp(1rem, 2.1rem, 2.2rem);
+
 }
 .icon {
     font-size: 3rem; /* o 48px */ 
@@ -67,21 +75,47 @@
 .icon:hover {
     transform: scale(1.2); /* Efecto de agrandamiento al pasar el mouse */
 }
+/* Responsive para pantallas grandes */
+@media (min-width: 1440px) {
+  .heroContent {
+    padding: 0rem 10rem;
+  }
+/* 
+  .title,
+  .span {
+    font-size: 6rem;
+  } */
+
+  /* .paragraph {
+    font-size: 2.3rem;
+    text-align: right;
+  } */
+
+  .buttonContainer button {
+       /* font-size: clamp(4rem, 12vw, 6rem); */
+
+    padding: 1.2rem 2.5rem;
+  }
+
+  .icon {
+    font-size: 3.5rem;
+  }
+}
 /* Responsive para pantallas menores a 1024px */
 @media (max-width: 1024px) {
     .heroContent {
       padding: 0rem 4rem;
     }
   
-    .title,
+    /* .title,
     .span {
       font-size: 4rem;
-    }
+    } */
   
-    .paragraph {
+    /* .paragraph {
       font-size: 1.5rem;
       text-align: center;
-    }
+    } */
   
     .buttonContainer {
       flex-direction: column;
@@ -91,7 +125,7 @@
     .buttonContainer button {
       width: 100%;
       max-width: 300px;
-      font-size: 1.3rem;
+      /* font-size: 1.3rem; */
     }
   
     .icon {
@@ -105,17 +139,17 @@
       padding: 0rem 2rem;
     }
   
-    .title,
+    /* .title,
     .span {
       font-size: 3rem;
-    }
+    } */
   
-    .paragraph {
+    /* .paragraph {
       font-size: 1.3rem;
     }
-  
+   */
     .buttonContainer button {
-      font-size: 1.2rem;
+      /* font-size: 1.2rem; */
       padding: 0.8rem 1.5rem;
     }
   
@@ -126,14 +160,14 @@
   
   /* Responsive para móviles pequeños */
   @media (max-width: 480px) {
-    .title,
+    /* .title,
     .span {
       font-size: 2.3rem;
-    }
+    } */
   
-    .paragraph {
+    /* .paragraph {
       font-size: 1.1rem;
-    }
+    } */
   
     .buttonContainer button {
       font-size: 1rem;
