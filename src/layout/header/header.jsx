@@ -62,9 +62,10 @@ const Header = () => {
       <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ''}`}>
         <div className={styles.logoContainer}>
           <div className={ `${styles.logo} ${scrolled ? '': styles.bgLogo}`}>
-            <a href="#home" className={styles.logoLink} onClick={() => setMenuOpen(false)}>
+
+            <div className={styles.logoLink} onClick={() => { setMenuOpen(false); scrollToSection('hero'); }}>
               {scrolled ? <img src={logo} alt="Logo" /> : <img src={logowhite} alt="Logo" /> }
-            </a>
+            </div>
           </div>
         </div>
         <button 
