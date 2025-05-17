@@ -1,0 +1,23 @@
+{
+  "name": "Vokativa",
+  "short_name": "Vokativa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#A0D5CD",
+  "theme_color": "#A0D5CD",
+  "description": "Vokativa es una escuela tecnológica para jóvenes. Aprende programación e inteligencia artificial desde los 12 años.",
+  "lang": "es-PE",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./src/assets/img/brand_vk.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./src/assets/img/brand_vk.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
