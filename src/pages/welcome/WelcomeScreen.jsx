@@ -17,7 +17,7 @@ function WelcomeScreen() {
       setShowWelcome(true);
       const hideTimer = setTimeout(() => {
         setHideWelcome(true);
-         navigate("/home");
+          navigate("/home");
       }, 2000);
       return () => clearTimeout(hideTimer);
     }, 4000);

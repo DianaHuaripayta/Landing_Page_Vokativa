@@ -60,8 +60,8 @@
   /* Decoración: flecha curva con CSS (simulada) */
   .arrow_decoration {
    position: absolute;
-  left: clamp(-40px, -4vw, -60px);
-  bottom: clamp(-130px, -9vw, -140px);
+  left: clamp(-100px, -4vw, -120px);
+  bottom: clamp(-160px, -9vw, -180px);
   width: clamp(200px, 30vw, 400px);
   height: clamp(200px, 30vw, 400px);
   background: url('../../assets/img/arrow.png') no-repeat;
