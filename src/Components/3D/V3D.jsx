@@ -1,49 +1,57 @@
-import React, { useEffect, useRef} from "react";
+
+import React, { useEffect, useRef } from "react";
 import { CameraControls, Text } from "@react-three/drei";
-import { VideoTexture } from "three";
 import { OrbitControls } from "@react-three/drei";
+import { use3DResponsive } from '../../hooks/use3DResponsive';
 
 const V3D = () => {
   const controls = useRef();
-  // 🔹 Mueve la cámara al iniciar
+  const { v3dConfig, cameraConfig } = use3DResponsive();
+
+  // Mueve la cámara al iniciar con configuración responsiva
   useEffect(() => {
     if (controls.current) {
-      controls.current.dolly(-80);
-      controls.current.dolly(80, true);
+      controls.current.dolly(-cameraConfig.dolly);
+      controls.current.dolly(cameraConfig.dolly, true);
     }
-  }, []);
-
+  }, [cameraConfig]);
 
   return (
-    <group position={[1, 1.5, 0]}>
+    <group position={v3dConfig.groupPosition}>
       <CameraControls ref={controls} />
       <OrbitControls />
 
-      {/* 🔹 Letra "V" */}
+      {/* Letra "V" */}
       <Text
         font={"/fonts/Poppins-ExtraBold.ttf"}
-        fontSize={1.6}
-        position={[-5.9, 0.1, 0]}
+        fontSize={v3dConfig.vFontSize}
+        position={v3dConfig.vPosition}
+        anchorX="center"
+        anchorY="middle"
       >
         V
-        <meshBasicMaterial color="#ffff" /> {/* 🔹 Color oscuro */}
+        <meshBasicMaterial color="#ffff" />
       </Text>
 
-      {/* 🔹 Asterisco debajo de la "V" */}
+      {/* Asterisco debajo de la "V" */}
       <Text
         font={"/fonts/Poppins-ExtraBold.ttf"}
-        fontSize={1}
-        position={[-5.9, -1, 0]}
+        fontSize={v3dConfig.asteriskFontSize}
+        position={v3dConfig.asteriskPosition}
+        anchorX="center"
+        anchorY="middle"
       >
         *
         <meshBasicMaterial color="#ffff" />
       </Text>
 
-      {/* 🔹 Resto de la palabra "OKATIVA" */}
+      {/* Resto de la palabra "OKATIVA" */}
       <Text
         font={"/fonts/Poppins-ExtraBold.ttf"}
-        fontSize={2}
-        position={[-0.6, 0, 0]}
+        fontSize={v3dConfig.okativaFontSize}
+        position={v3dConfig.okativaPosition}
+        anchorX="left"
+        anchorY="middle"
       >
         OKATIVA
         <meshBasicMaterial color="#ffff" />
