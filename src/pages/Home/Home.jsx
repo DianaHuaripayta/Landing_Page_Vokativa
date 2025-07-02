@@ -14,9 +14,7 @@ const Home = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalText, setModalText] = useState("");
   const handleShowModal = () => {
-    setModalText(
-      "Haz clic en el botón de abajo 👇 para acceder al formulario de inscripción y ser parte de nuestra comunidad Vokativa 🙌. ¡Te esperamos👩‍💻!"
-    );
+    setModalText("");
     setModalOpen(true);
   };
   useEffect(() => {
