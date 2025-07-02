@@ -31,7 +31,7 @@ export default function CustomizedDialogs({
   };
   return (
     <BootstrapDialog onClose={onClose} open={open}>
-      <DialogTitle sx={{ m: 0, p: 2 }}>Inscripción</DialogTitle>
+      {/* <DialogTitle sx={{ m: 0, p: 2 }}>Inscripción</DialogTitle> */}
       <IconButton
         aria-label="close"
         onClick={onClose}
@@ -49,13 +49,14 @@ export default function CustomizedDialogs({
         <img
           src={url}
           alt="Inscripción"
-          style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+            onClick={handleClose} 
+          style={{ cursor: 'pointer', width: "100%", height: "70vh", borderRadius: "8px"}}
         />
       </DialogContent>
       <DialogActions>
-        <Button  variant="contained"  color="secondary" autoFocus onClick={handleClose}>
+        {/* <Button  variant="contained"  color="secondary" autoFocus onClick={handleClose}>
           {btnCloseText}
-        </Button>{" "}
+        </Button>{" "} */}
       </DialogActions>
     </BootstrapDialog>
   );
